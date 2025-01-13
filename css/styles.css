@@ -11,6 +11,10 @@ header {
   text-align: center;
 }
 
+legend {
+  margin-bottom: 5px;
+}
+
 
 h1 {
   margin: auto;
@@ -50,10 +54,7 @@ p, label {
 }
 
 form {
-  margin: 1px auto;
-  border-top: 2px solid rgb(63, 72, 104);
-  padding-top: 21px;
-  width: 89%;
+  width: 100%;
 }
 
 .contact-info > div {
@@ -68,6 +69,7 @@ div {
 
 input[type="text"], input[type="email"], input[type="tel"] {
   height: 44px;
+  border-radius: 3px;
 }
 
 #zip {
@@ -82,11 +84,12 @@ label + input, select {
 select {
   height: 50px;
   padding: 2px 3px;
+  opacity: 0.5;
 }
 
-input, select {
+input, select, textarea {
   border-style: none;
-  background-color: rgb(247, 242, 242);;
+  background-color: rgb(247, 242, 242);
 }
 
 input::placeholder {
@@ -94,4 +97,56 @@ input::placeholder {
   margin-right: 8px;
   opacity: 0.5;
   font-style: italic;
+}
+
+fieldset {
+  margin-top: 21px;
+  border-style: none;
+}
+
+hr {
+  border-top: 2px solid rgb(63, 72, 104);
+  margin-top: 8px;
+}
+
+textarea {
+  margin-top: 8px;
+  width: 100%;
+  height: 89px;
+  border-radius: 3px;
+}
+
+.comment-area {
+  padding: 21px 0 6px 0;
+  
+}
+
+.newsletter > div {
+  margin: auto;
+  padding-left: 0;
+}
+
+button {
+  width: 100%;
+  height: 55px;
+  margin: 13px auto;
+  background-color: rgb(69, 128, 128);
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 1.34em;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.89em;
+  opacity: 0.5;
+  font-style: italic;
+  padding-bottom: 13px;
+  margin-bottom: 21px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid rgb(63, 72, 104);
 }

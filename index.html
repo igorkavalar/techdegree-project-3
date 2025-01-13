@@ -15,9 +15,11 @@
         <div class="intro">
           <h2>Signup for our newsletter</h2>
           <p>Get the latest news on how your code is doing, right in your inbox</p>
+          <hr>
         </div>
       </header>
       <main>
+      
         <form action="index.html" method="post">
           
           <fieldset class="contact-info">
@@ -53,12 +55,14 @@
               <input type="text" id="zip" name="user_zip">
             </div>
           </fieldset>
-          
+          <div>
+            <hr>
+          </div>
           <fieldset class="newsletter">
             <legend>Newsletter</legend>
             <p>Select the newsletters you would like to receive</p>
             <div>
-              <input type="checkbox" id="html-newsletter" value="html-newsletter" name="language_newsletter"><label for="html-newsletter">HTML News</label>
+              <input type="checkbox" id="html-newsletter" value="html-newsletter" name="language_newsletter" checked><label for="html-newsletter">HTML News</label>
             </div>
             <div>
               <input type="checkbox" id="css-newsletter" value="css-newsletter" name="language_newsletter"><label for="css-newsletter">CSS News</label>
@@ -67,15 +71,16 @@
             <div>
               <input type="checkbox" id="js-newsletter" value="js-newsletter" name="language_newsletter"><label for="js-newsletter">Javascript News</label>
             </div>
+            
             <p>Newsletter format</p>
             <div>
-              <input type="radio" id="html-format" value="html-format" name="newsletter_format"><label for="html-format">HTML</label>
+              <input type="radio" id="html-format" value="html-format" name="newsletter_format" checked><label for="html-format">HTML</label>
             </div>
             <div>
               <input type="radio" id="plain-format" value="plain-format" name="newsletter_format"><label for="plain-format">Plain Text</label>
             </div>
-            <div>
-              <label for="comment">Other topics you would like to hear about</label><br>
+            <div class="comment-area">
+              <label for="comment">Other topics you'd like to hear about</label><br>
               <textarea id="comment" name="user_comment"></textarea>
             </div>
             <button type="submit">Sign Up</button>
@@ -83,7 +88,7 @@
         </form>
       </main>
     <footer>
-      <p>Copyright the Code Review</p>
+      <p class="copyright">Copyright the Code Review</p>
     </footer>
   </body>
 </html>
